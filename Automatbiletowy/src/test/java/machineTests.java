@@ -169,7 +169,7 @@ public class machineTests {
     public void addMoneyReturn(){
         Machine testMachine = new Machine();
         testMachine.addTicket(1);
-        testMachine.addMoney(37);
+        testMachine.addMoney(3);
 
         assertTrue(testMachine.addMoney(2.3));
 
