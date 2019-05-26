@@ -97,4 +97,81 @@ public class machineTests {
 
         assertEquals(6*100, testMachine.getCostOfTickets());
     }
+
+    @Test
+    public void deleteTicketsTestingReturns(){
+        Machine testMachine = new Machine();
+        testMachine.addTicket(1);
+
+        //less than 0 returns true
+        assertFalse(testMachine.deleteTicket(1));
+        assertTrue(testMachine.deleteTicket(1));
+    }
+
+    @Test
+    public void deleteTicketsTestingDeleting(){
+        Machine testMachine = new Machine();
+        testMachine.addTicket(1);
+        testMachine.deleteTicket(1);
+
+        //less than 0 returns true
+        assertEquals(0, testMachine.getCostOfTickets());
+    }
+
+    @Test
+    public void deleteTicketsRounding(){
+        Machine testMachine = new Machine();
+        for(int i = 0; i<3; i++){
+            testMachine.addTicket(4);
+            testMachine.addTicket(5);
+        }
+        for(int i = 0; i<3; i++){
+            testMachine.deleteTicket(4);
+            testMachine.deleteTicket(5);
+        }
+
+        assertEquals(0, testMachine.getCostOfTickets());
+    }
+
+    @Test
+    public void resetingMoneyTest(){
+        Machine testMachine = new Machine();
+        for(int i = 0; i<3; i++){
+            testMachine.addTicket(4);
+            testMachine.addTicket(5);
+        }
+
+        testMachine.setTicketsToZero();
+        assertEquals(0, testMachine.getCostOfTickets());
+    }
+
+    @Test
+    public void addMoneyTestingAdding(){
+        Machine testMachine = new Machine();
+        testMachine.addTicket(1);
+        testMachine.addMoney(2);
+
+        assertEquals(0.3, testMachine.getCostOfTickets());
+
+    }
+
+    @Test
+    public void addMoneyWeirdNumber(){
+        Machine testMachine = new Machine();
+        testMachine.addTicket(1);
+        testMachine.addMoney(37);
+
+        assertEquals(0, testMachine.getCostOfTickets());
+
+    }
+
+    @Test
+    public void addMoneyReturn(){
+        Machine testMachine = new Machine();
+        testMachine.addTicket(1);
+        testMachine.addMoney(37);
+
+        assertTrue(testMachine.addMoney(2.3));
+
+    }
 }
