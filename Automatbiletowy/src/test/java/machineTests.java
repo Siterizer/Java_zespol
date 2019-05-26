@@ -159,7 +159,7 @@ public class machineTests {
     public void addMoneyWeirdNumber(){
         Machine testMachine = new Machine();
         testMachine.addTicket(1);
-        testMachine.addMoney(37);
+        testMachine.addMoney(36);
 
         assertEquals(0, testMachine.getCostOfTickets());
 
