@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="690a1477-487f-4961-aa39-d2d6f61c4dfb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Automat/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Automat/Machine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Automat/Machine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Automat/Machine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$15.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$16.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$17.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$18.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$19.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$19.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyGui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Do zrobienia.odt" beforeDir="false" afterPath="$PROJECT_DIR$/../Do zrobienia.odt" afterDir="false" />
-    </list>
+    <list default="true" id="690a1477-487f-4961-aa39-d2d6f61c4dfb" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MyGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
+            <state relative-caret-position="217">
               <caret line="407" column="90" selection-start-line="407" selection-start-column="90" selection-end-line="407" selection-end-column="90" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -88,11 +61,11 @@
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Automat/Machine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="102" selection-start-line="102" selection-end-line="102" />
+            <state relative-caret-position="124">
+              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
               <folding>
                 <element signature="method#addTicket#0;class#Machine#0" />
               </folding>
@@ -183,8 +156,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Automat/MoneyTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Automat/MoneyTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Automat/Machine.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyGui.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Automat/Machine.java" />
       </list>
     </option>
   </component>
@@ -211,7 +184,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1366" />
     <option name="y" value="55" />
     <option name="width" value="1221" />
@@ -261,7 +234,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE" value="left" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559151258803" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559151308296" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -375,6 +348,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="25" width="1360" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.31354642" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -486,19 +460,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Automat/Machine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="102" selection-start-line="102" selection-end-line="102" />
-          <folding>
-            <element signature="method#addTicket#0;class#Machine#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MyGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
+        <state relative-caret-position="217">
           <caret line="407" column="90" selection-start-line="407" selection-start-column="90" selection-end-line="407" selection-end-column="90" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -508,6 +472,16 @@
             <element signature="e#1225#1226#0" expanded="true" />
             <element signature="e#1263#1264#0" expanded="true" />
             <element signature="e#1293#1294#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Automat/Machine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+          <folding>
+            <element signature="method#addTicket#0;class#Machine#0" />
           </folding>
         </state>
       </provider>
