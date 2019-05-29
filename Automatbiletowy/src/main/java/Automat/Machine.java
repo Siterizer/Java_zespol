@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class Machine {
     private ArrayList<Money> listOfMoney;
     private double costOfTickets = 0;
+    private String text = "";
     public Machine() {
         this.listOfMoney = new ArrayList<Money>();
     }
@@ -18,12 +19,19 @@ public class Machine {
         }
         return false;
     }
+
+    public String getText(){
+        return this.text;
+    }
+    public void clearText(){this.text = "";}
+    public void setText(String text){ this.text += text;}
+
     public void giveBackMoney(){
         if(listOfMoney.size() > 0){
-            System.out.println("Zwracam:");
+            this.setText("Zwracam: \n");
         }
         for (Money money : listOfMoney) {
-            System.out.println(money.getValue() + "PLN");
+            this.setText(money.getValue() + " PLN \n");
         }
         listOfMoney.clear();
     }
@@ -32,67 +40,68 @@ public class Machine {
     }
     private void returnMoney(){
         this.listOfMoney.clear();
-        System.out.println("Reszta:");
+        if (this.costOfTickets < 0)
+            this.setText("Reszta: \n");
         while(this.costOfTickets < 0){
             this.costOfTickets = round(this.costOfTickets, 2);
             if((this.costOfTickets + 50) <= 0){
                 this.costOfTickets += 50;
-                System.out.println("50 PLN:");
+                this.setText("50 PLN \n");
                 continue;
             }
             if((this.costOfTickets + 20) <= 0){
                 this.costOfTickets += 20;
-                System.out.println("20 PLN:");
+                this.setText("20 PLN \n");
                 continue;
             }
             if((this.costOfTickets + 10) <= 0){
                 this.costOfTickets += 10;
-                System.out.println("10 PLN:");
+                this.setText("10 PLN \n");
                 continue;
             }
             if((this.costOfTickets + 5) <= 0){
                 this.costOfTickets += 5;
-                System.out.println("5 PLN:");
+                this.setText("5 PLN \n");
                 continue;
             }
             if((this.costOfTickets + 2) <= 0){
                 this.costOfTickets += 2;
-                System.out.println("2 PLN:");
+                this.setText("2 PLN \n");
                 continue;
             }
             if((this.costOfTickets + 1) <= 0){
                 this.costOfTickets += 1;
-                System.out.println("1 PLN:");
+                this.setText("1 PLN \n");
                 continue;
             }
             if((this.costOfTickets + 0.5) <= 0){
                 this.costOfTickets += 0.5;
-                System.out.println("0.50 PLN:");
+                this.setText("0.50 PLN \n");
                 continue;
             }
             if((this.costOfTickets + 0.2) <= 0){
                 this.costOfTickets += 0.2;
-                System.out.println("0.20 PLN:");
+                this.setText("0.20 PLN \n");
                 continue;
             }
             if((this.costOfTickets + 0.1) <= 0){
                 this.costOfTickets += 0.1;
-                System.out.println("0.10 PLN:");
+                this.setText("0.10 PLN \n");
                 continue;
             }
             if((this.costOfTickets + 0.05) <= 0){
                 this.costOfTickets += 0.05;
-                System.out.println("0.05 PLN:");
+                this.setText("0.05 PLN \n");
                 continue;
             }
             if((this.costOfTickets + 0.02) <= 0){
                 this.costOfTickets += 0.02;
-                System.out.println("0.02 PLN:");
+                this.setText("0.02 PLN \n");
                 continue;
             }
             if((this.costOfTickets + 0.01) <= 0){
                 this.costOfTickets += 0.01;
-                System.out.println("0.01 PLN:");
+                this.setText("0.01 PLN \n");
             }
             this.costOfTickets = round(this.costOfTickets, 2);
         }
