@@ -30,6 +30,19 @@ public class MyGui {
     private JSpinner spinner_N_40;
     private JSpinner spinner_U_40;
     private JTextArea TextArea;
+    private String text = "";
+
+    public void setTextMessage(String text) {
+        this.text += text;
+    }
+
+    public String getTextMessage() {
+        return this.text;
+    }
+
+    public void clearTextMessage() {
+        this.text = "";
+    }
 
     public MyGui() {
         TextArea.setVisible(true);
@@ -175,8 +188,10 @@ public class MyGui {
             public void actionPerformed(ActionEvent e) {
                 if (isHereAnyMoney()) {
                     if (machine.addMoney(0.01)) {
+                        setTextMessage(machine.getText());
                         getTickets();
                         resetSpinners();
+                        machine.clearText();
                     }
                 }
                 setText();
@@ -186,8 +201,10 @@ public class MyGui {
             public void actionPerformed(ActionEvent e) {
                 if (isHereAnyMoney()) {
                     if (machine.addMoney(0.02)) {
+                        setTextMessage(machine.getText());
                         getTickets();
                         resetSpinners();
+                        machine.clearText();
                     }
                 }
                 setText();
@@ -197,8 +214,10 @@ public class MyGui {
             public void actionPerformed(ActionEvent e) {
                 if (isHereAnyMoney()) {
                     if (machine.addMoney(0.05)) {
+                        setTextMessage(machine.getText());
                         getTickets();
                         resetSpinners();
+                        machine.clearText();
                     }
                 }
                 setText();
@@ -208,8 +227,10 @@ public class MyGui {
             public void actionPerformed(ActionEvent e) {
                 if (isHereAnyMoney()) {
                     if (machine.addMoney(0.10)) {
+                        setTextMessage(machine.getText());
                         getTickets();
                         resetSpinners();
+                        machine.clearText();
                     }
                 }
                 setText();
@@ -219,8 +240,10 @@ public class MyGui {
             public void actionPerformed(ActionEvent e) {
                 if (isHereAnyMoney()) {
                     if (machine.addMoney(0.20)) {
+                        setTextMessage(machine.getText());
                         getTickets();
                         resetSpinners();
+                        machine.clearText();
                     }
                 }
                 setText();
@@ -230,8 +253,10 @@ public class MyGui {
             public void actionPerformed(ActionEvent e) {
                 if (isHereAnyMoney()) {
                     if (machine.addMoney(0.50)) {
+                        setTextMessage(machine.getText());
                         getTickets();
                         resetSpinners();
+                        machine.clearText();
                     }
                 }
                 setText();
@@ -241,8 +266,10 @@ public class MyGui {
             public void actionPerformed(ActionEvent e) {
                 if (isHereAnyMoney()) {
                     if (machine.addMoney(1.00)) {
+                        setTextMessage(machine.getText());
                         getTickets();
                         resetSpinners();
+                        machine.clearText();
                     }
                 }
                 setText();
@@ -252,8 +279,10 @@ public class MyGui {
             public void actionPerformed(ActionEvent e) {
                 if (isHereAnyMoney()) {
                     if (machine.addMoney(2.00)) {
+                        setTextMessage(machine.getText());
                         getTickets();
                         resetSpinners();
+                        machine.clearText();
                     }
                 }
                 setText();
@@ -263,8 +292,10 @@ public class MyGui {
             public void actionPerformed(ActionEvent e) {
                 if (isHereAnyMoney()) {
                     if (machine.addMoney(5.00)) {
+                        setTextMessage(machine.getText());
                         getTickets();
                         resetSpinners();
+                        machine.clearText();
                     }
                 }
                 setText();
@@ -274,8 +305,10 @@ public class MyGui {
             public void actionPerformed(ActionEvent e) {
                 if (isHereAnyMoney()) {
                     if (machine.addMoney(10.00)) {
+                        setTextMessage(machine.getText());
                         getTickets();
                         resetSpinners();
+                        machine.clearText();
                     }
                 }
                 setText();
@@ -285,8 +318,10 @@ public class MyGui {
             public void actionPerformed(ActionEvent e) {
                 if (isHereAnyMoney()) {
                     if (machine.addMoney(20.00)) {
+                        setTextMessage(machine.getText());
                         getTickets();
                         resetSpinners();
+                        machine.clearText();
                     }
                 }
                 setText();
@@ -296,8 +331,10 @@ public class MyGui {
             public void actionPerformed(ActionEvent e) {
                 if (isHereAnyMoney()) {
                     if (machine.addMoney(50.00)) {
+                        setTextMessage(machine.getText());
                         getTickets();
                         resetSpinners();
+                        machine.clearText();
                     }
                 }
                 setText();
@@ -308,43 +345,47 @@ public class MyGui {
                 machine.giveBackMoney();
                 resetSpinners();
                 setText();
+                setTextMessage(machine.getText());
+                JOptionPane.showMessageDialog(JOptionPane.getRootFrame(), getTextMessage());
+                machine.clearText();
+                clearTextMessage();
             }
         });
     }
 
     private void getTickets() {
-        System.out.println("Wydrukowano:");
+        this.setTextMessage("Wydrukowano:\n");
         for (int i = 0; i < 6; i++) {
             if (stateOfSpinners[i] != 0) {
                 switch (i) {
                     case 0:
-                        System.out.println(stateOfSpinners[i] + "bieltow normalnych 20min ");
+                        this.setTextMessage(stateOfSpinners[i] + " biletow ulgowy 20min\n");
                         break;
                     case 1:
-                        System.out.println(stateOfSpinners[i] + "bieltow normalnych 50min ");
+                        this.setTextMessage(stateOfSpinners[i] + " biletow ulgowy 50min\n");
                         break;
                     case 2:
-                        System.out.println(stateOfSpinners[i] + "bieltow normalnych 90min ");
+                        this.setTextMessage(stateOfSpinners[i] + " biletow ulgowy 90min\n");
                         break;
                     case 3:
-                        System.out.println(stateOfSpinners[i] + "bieltow ulgowych 20min ");
+                        this.setTextMessage(stateOfSpinners[i] + " biletow normalnych 20min\n");
                         break;
                     case 4:
-                        System.out.println(stateOfSpinners[i] + "bieltow ulgowych 50min ");
+                        this.setTextMessage(stateOfSpinners[i] + " biletow normalnych 50min\n");
                         break;
                     case 5:
-                        System.out.println(stateOfSpinners[i] + "bieltow ulgowych 90min ");
+                        this.setTextMessage(stateOfSpinners[i] + " biletow normalnych 50min\n");
                         break;
                 }
-
-
             }
         }
+        JOptionPane.showMessageDialog(JOptionPane.getRootFrame(), this.getTextMessage());
+        this.clearTextMessage();
     }
 
     private boolean isHereAnyMoney() {
         if (machine.getCostOfTickets() == 0) {
-            System.out.println("Nie mozna dodac biletu");
+            JOptionPane.showMessageDialog(JOptionPane.getRootFrame(), "Pierwsze wybierz bilet");
             return false;
         }
         return true;
@@ -364,7 +405,7 @@ public class MyGui {
         if (machine.getCostOfTickets() == 0.0) {
             TextArea.setText(null);
         } else {
-            TextArea.setText(String.valueOf(machine.getCostOfTickets()));
+            TextArea.setText(String.valueOf("Do zapłaty " + machine.getCostOfTickets() + "zł"));
         }
     }
 
