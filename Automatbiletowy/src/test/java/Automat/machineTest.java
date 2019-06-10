@@ -1,9 +1,13 @@
 package Automat;
-import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 
-public class machineTests {
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+public class MachineTest {
     //private function from machine - testing
     private static double round(double value, int places) {
         if (places < 0) throw new IllegalArgumentException();
@@ -17,7 +21,7 @@ public class machineTests {
 
 
     @Test
-    public void returnsCorrectStateWhenEmpty(){
+    public void returnsCorrectStateWhenEmptyTest(){
         Machine testMachine = new Machine();
 
         //no money so returns true that there is no money
@@ -25,7 +29,7 @@ public class machineTests {
     }
 
     @Test
-    public void returnsCorrectStateWhenNotEmpty(){
+    public void returnsCorrectStateWhenNotEmptyTest(){
         Machine testMachine = new Machine();
         testMachine.addTicket(1);
 
@@ -36,35 +40,35 @@ public class machineTests {
     public void addTicketTestingForIndexZeroFirst(){
         Machine testMachine = new Machine();
         testMachine.addTicket(0);
-        assertEquals(1.7, testMachine.getCostOfTickets());
+        assertEquals(1.7, testMachine.getCostOfTickets(),0.000000001);
         testMachine.addTicket(1);
-        assertEquals(4, testMachine.getCostOfTickets());
+        assertEquals(4, testMachine.getCostOfTickets(),0.000000001);
         testMachine.addTicket(2);
-        assertEquals(7, testMachine.getCostOfTickets());
+        assertEquals(7, testMachine.getCostOfTickets(),0.000000001);
         testMachine.addTicket(3);
-        assertEquals(10.4, testMachine.getCostOfTickets());
+        assertEquals(10.4, testMachine.getCostOfTickets(),0.000000001);
 
     }
 
     @Test
-    public void addTicketTestingForIndexOneXFour(){
+    public void addTicketTestingForIndexOneXFourTest(){
         Machine testMachine = new Machine();
         testMachine.addTicket(1);
         testMachine.addTicket(1);
         testMachine.addTicket(1);
         testMachine.addTicket(1);
 
-        assertEquals(2.3*4, testMachine.getCostOfTickets());
+        assertEquals(2.3*4, testMachine.getCostOfTickets(),0.000000001);
     }
 
     @Test
-    public void addTicketTestingAll(){
+    public void addTicketTestingAllTest(){
         Machine testMachine = new Machine();
         for(int i = 0; i<6; i++) {
             testMachine.addTicket(i);
         }
 
-        assertEquals(1.7+2.3+3+3.4+4.6+6, testMachine.getCostOfTickets());
+        assertEquals(1.7+2.3+3+3.4+4.6+6, testMachine.getCostOfTickets(),0.000000001);
     }
 
     @Test
@@ -74,7 +78,7 @@ public class machineTests {
             testMachine.addTicket(3);
         }
 
-        assertEquals(3.4*10, testMachine.getCostOfTickets());
+        assertEquals(3.4*10, testMachine.getCostOfTickets(),0.000000001);
     }
 
     @Test
@@ -86,7 +90,7 @@ public class machineTests {
         }
 
         //4.6*3+6*3 return 31.7999... we want for it to be rounded so 31.8
-        assertEquals(31.8, testMachine.getCostOfTickets());
+        assertEquals(31.8, testMachine.getCostOfTickets(),0.000000001);
     }
 
     @Test
@@ -95,7 +99,7 @@ public class machineTests {
         for(int i=0;i<100;i++){
             testMachine.addTicket(5);}
 
-        assertEquals(6*100, testMachine.getCostOfTickets());
+        assertEquals(6*100, testMachine.getCostOfTickets(),0.000000001);
     }
 
     @Test
@@ -115,7 +119,7 @@ public class machineTests {
         testMachine.deleteTicket(1);
 
         //less than 0 returns true
-        assertEquals(0, testMachine.getCostOfTickets());
+        assertEquals(0, testMachine.getCostOfTickets(),0.000000001);
     }
 
     @Test
@@ -130,7 +134,7 @@ public class machineTests {
             testMachine.deleteTicket(5);
         }
 
-        assertEquals(0, testMachine.getCostOfTickets());
+        assertEquals(0, testMachine.getCostOfTickets(),0.000000001);
     }
 
     @Test
@@ -142,7 +146,7 @@ public class machineTests {
         }
 
         testMachine.setTicketsToZero();
-        assertEquals(0, testMachine.getCostOfTickets());
+        assertEquals(0, testMachine.getCostOfTickets(),0.000000001);
     }
 
     @Test
@@ -151,7 +155,7 @@ public class machineTests {
         testMachine.addTicket(1);
         testMachine.addMoney(2);
 
-        assertEquals(0.3, testMachine.getCostOfTickets());
+        assertEquals(0.3, testMachine.getCostOfTickets(),0.000000001);
 
     }
 
@@ -161,7 +165,7 @@ public class machineTests {
         testMachine.addTicket(1);
         testMachine.addMoney(36);
 
-        assertEquals(0, testMachine.getCostOfTickets());
+        assertEquals(0, testMachine.getCostOfTickets(),0.000000001);
 
     }
 
